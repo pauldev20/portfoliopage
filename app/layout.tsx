@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -32,6 +33,7 @@ export default function RootLayout({
         {children}
         {/* ------------------------------- Bottom Blur ------------------------------ */}
         <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"/>
+        <SpeedInsights/>
         <Analytics/>
       </body>
     </html>
