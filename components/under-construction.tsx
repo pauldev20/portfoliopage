@@ -5,10 +5,10 @@ export default function UnderConstruction() {
         <div className="flex flex-col items-center justify-center w-full h-full space-y-4">
             <div className="flex items-center gap-4">
                 <Image src="/barrier.gif" alt="Under Construction" width={60} height={60} />
-                <h1 className="text-4xl font-bold">Under Construction</h1>
+                <h1 className="text-2xl sm:text-4xl font-bold">Under Construction</h1>
                 <Image src="/barrier.gif" alt="Under Construction" width={60} height={60} />
             </div>
-            <p className="text-lg font-medium text-muted-foreground dark:text-muted-invert">This page is still being built. Check back soon!</p>
+            <p className="text-base sm:text-lg text-center font-medium text-muted-foreground dark:text-muted-invert">This page is still being built. Check back soon!</p>
         </div>
     )
 }
