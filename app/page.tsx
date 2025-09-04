@@ -13,7 +13,7 @@ import WorkExperience from "@/sections/WorkExperience";
 /* -------------------------------------------------------------------------- */
 /*                                  PageData                                  */
 /* -------------------------------------------------------------------------- */
-export const pageData = {
+const pageData = {
     heading: "Hi, I'm Paul Geeser 👋",
     description:
         "Software Engineer focused on blockchain for 5 years, with more than 10 years of experience in electrical and mechanical engineering.",
