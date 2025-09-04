@@ -8,7 +8,9 @@ export default function UnderConstruction() {
                 <h1 className="text-2xl sm:text-4xl font-bold">Under Construction</h1>
                 <Image src="/barrier.gif" alt="Under Construction" width={60} height={60} />
             </div>
-            <p className="text-base sm:text-lg text-center font-medium text-muted-foreground dark:text-muted-invert">This page is still being built. Check back soon!</p>
+            <p className="text-base sm:text-lg text-center font-medium text-muted-foreground dark:text-muted-invert">
+                This page is still being built. Check back soon!
+            </p>
         </div>
-    )
+    );
 }

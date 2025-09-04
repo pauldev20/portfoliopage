@@ -1,9 +1,242 @@
-import UnderConstruction from "@/components/under-construction";
+import { SiGithub, SiGmail, SiX } from "@icons-pack/react-simple-icons";
+import { Linkedin } from "lucide-react";
+import type { Metadata } from "next";
 
+import AboutSection from "@/sections/AboutSection";
+import ContactSection from "@/sections/ContactSection";
+import EducationSection from "@/sections/EducationSection";
+import HackathonsSection from "@/sections/HackathonsSection";
+import HeroSection from "@/sections/HeroSection";
+import SkillsSection from "@/sections/SkillsSection";
+import WorkExperience from "@/sections/WorkExperience";
+
+/* -------------------------------------------------------------------------- */
+/*                                  PageData                                  */
+/* -------------------------------------------------------------------------- */
+export const pageData = {
+    heading: "Hi, I'm Paul Geeser 👋",
+    description:
+        "Software Engineer focused on blockchain for 5 years, with more than 10 years of experience in electrical and mechanical engineering.",
+    links: [
+        { href: "mailto:contact@pauldev.sh", label: "Email", icon: <SiGmail className="size-6" /> },
+        { href: "https://x.com/paul__dev", label: "X", icon: <SiX className="size-5" /> },
+        { href: "https://github.com/pauldev20", label: "GitHub", icon: <SiGithub className="size-5" /> },
+        { href: "https://linkedin.com/in/paulgeeser", label: "LinkedIn", icon: <Linkedin className="size-5" /> },
+    ],
+    about: 'Since a young age, I\'ve been interested in all kinds of electronic devices. I began by repairing and building tube amplifiers, moved into microcontrollers, and eventually progressed to software development. After studying "Industrial Engineering", I joined 42 Heilbronn, a project-based coding school, and completed the program and an internship by the end of 2024. I’m especially interested in blockchain (mainly Ethereum) and privacy-preserving software with a focus on full-stack engineering. I enjoy fast, MVP-driven iterations that grow into clean, user-friendly products, prioritizing what matters. Skilled in reverse engineering, energetic, and committed to continual learning. In my free time, I still tinker with hardware and music gear.',
+    workExperiences: [
+        {
+            company: "Arkadia Heilbronn gGmbH",
+            companyUrl: "https://arkadia.hn",
+            companyLogo: "/arkadia.jpeg",
+            position: "Software Engineer & Head of IT",
+            startDate: new Date("2024-12-01"),
+            endDate: null,
+            description: "Description 1",
+        },
+        {
+            company: "synthavo GmbH",
+            companyUrl: "https://www.synthavo.de",
+            companyLogo: "/synthavo.png",
+            position: "Software Engineer Intern",
+            startDate: new Date("2023-08-01"),
+            endDate: new Date("2024-01-01"),
+            description: "Description 1",
+        },
+        {
+            company: "Soundland GmbH",
+            companyUrl: "https://www.soundland.de",
+            companyLogo: "/soundland.png",
+            position: "Specialist Retail Salesperson",
+            startDate: new Date("2019-10-01"),
+            endDate: new Date("2020-09-01"),
+            description: "Description 1",
+        },
+    ],
+    education: [
+        {
+            title: "42 Heilbronn",
+            image: "/42hn.png",
+            subtitle: "Software Engineering",
+            startDate: new Date("2022-03-01"),
+            endDate: new Date("2024-12-01"),
+        },
+        {
+            title: "Kolping Gymnasium Fellbach",
+            image: "/kolping.jpg",
+            subtitle: "High School Diploma, Design and Media Technology",
+            startDate: new Date("2017-09-01"),
+            endDate: new Date("2024-07-01"),
+        },
+        {
+            title: "Lise-Meitner-Gymnasium",
+            image: "/lmg.png",
+            subtitle: "General Education Degree",
+            startDate: new Date("2012-09-01"),
+            endDate: new Date("2024-07-01"),
+        },
+    ],
+    skillsDescription: "Always learning...",
+    skills: ["JavaScript", "TypeScript", "React", "Next.js", "C", "C++", "Blockchain"],
+    hackathonsDescription: "Attending to hackathons",
+    hackathons: [
+        {
+            title: "Slash Berlin",
+            logo: "/.png",
+            location: "Berlin, Germany",
+            locationPoint: [52.510885, 13.3989367],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2022-09-23"),
+            endDate: new Date("2022-09-25"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal Lisbon",
+            logo: "/.png",
+            location: "Lisbon, Portugal",
+            locationPoint: [38.7077507, -9.1365919],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2023-05-12"),
+            endDate: new Date("2023-05-14"),
+            links: [],
+        },
+        {
+            title: "ETHMunich",
+            logo: "/.png",
+            location: "Munich, Germany",
+            locationPoint: [48.1371079, 11.5753822],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2023-08-11"),
+            endDate: new Date("2023-08-13"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal New York",
+            logo: "/.png",
+            location: "New York, USA",
+            locationPoint: [40.7127281, -74.0060152],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2023-09-22"),
+            endDate: new Date("2023-09-24"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal Istanbul",
+            logo: "/.png",
+            location: "Istanbul, Turkey",
+            locationPoint: [41.006381, 28.9758715],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2023-11-17"),
+            endDate: new Date("2023-11-19"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal London",
+            logo: "/.png",
+            location: "London, UK",
+            locationPoint: [51.5074456, -0.1277653],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2024-03-15"),
+            endDate: new Date("2024-03-17"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal Brussels",
+            logo: "/.png",
+            location: "Brussels, Belgium",
+            locationPoint: [50.8465573, 4.351697],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2024-07-12"),
+            endDate: new Date("2024-07-14"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal Singapore",
+            logo: "/.png",
+            location: "Singapore, Singapore",
+            locationPoint: [1.357107, 103.8194992],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2024-09-20"),
+            endDate: new Date("2024-09-22"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal San Francisco",
+            logo: "/.png",
+            location: "San Francisco, USA",
+            locationPoint: [37.7792588, -122.4193286],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2024-10-18"),
+            endDate: new Date("2024-10-20"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal Bangkok",
+            logo: "/.png",
+            location: "Bangkok, Thailand",
+            locationPoint: [13.7524938, 100.4935089],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2024-11-15"),
+            endDate: new Date("2024-11-17"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal Taipei",
+            logo: "/.png",
+            location: "Taipei, Taiwan",
+            locationPoint: [25.0375198, 121.5636796],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2025-04-04"),
+            endDate: new Date("2025-04-06"),
+            links: [],
+        },
+        {
+            title: "ETHGlobal Cannes",
+            logo: "/.png",
+            location: "Cannes, France",
+            locationPoint: [43.5515198, 7.0134418],
+            livingLocationPoint: [49.1427, 9.2109],
+            description: "Description 1",
+            startDate: new Date("2025-07-04"),
+            endDate: new Date("2025-07-06"),
+            links: [],
+        },
+    ],
+    contactDescription:
+        "Feel free to reach out to me! I'm always looking for new opportunities and collaborations or just a chat.",
+};
+
+/* -------------------------------------------------------------------------- */
+/*                                  Metadata                                  */
+/* -------------------------------------------------------------------------- */
+export const metadata: Metadata = {
+    description: pageData.description,
+};
+
+/* -------------------------------------------------------------------------- */
+/*                                  HomePage                                  */
+/* -------------------------------------------------------------------------- */
 export default function Home() {
     return (
-        <main className="flex flex-col max-w-5xl space-y-10">
-            <UnderConstruction/>
+        <main className="flex flex-col max-w-4xl space-y-10">
+            <HeroSection heading={pageData.heading} description={pageData.description} links={pageData.links} />
+            <AboutSection aboutText={pageData.about} />
+            <WorkExperience workExperiences={pageData.workExperiences} />
+            <EducationSection education={pageData.education} />
+            <SkillsSection description={pageData.skillsDescription} skills={pageData.skills} />
+            <HackathonsSection description={pageData.hackathonsDescription} hackathons={pageData.hackathons} />
+            <ContactSection description={pageData.contactDescription} links={pageData.links} />
         </main>
     );
 }
