@@ -1,27 +1,31 @@
-import { SiGithub, SiGmail, SiX } from "@icons-pack/react-simple-icons";
-import { Linkedin } from "lucide-react";
-import type { Metadata } from "next";
+import { faLinkedinIn, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-import AboutSection from "@/sections/AboutSection";
-import ContactSection from "@/sections/ContactSection";
-import EducationSection from "@/sections/EducationSection";
-import HackathonsSection from "@/sections/HackathonsSection";
-import HeroSection from "@/sections/HeroSection";
-import SkillsSection from "@/sections/SkillsSection";
-import WorkExperience from "@/sections/WorkExperience";
-
-/* -------------------------------------------------------------------------- */
-/*                                  PageData                                  */
-/* -------------------------------------------------------------------------- */
-const pageData = {
+export const pageData = {
+    pageTitle: "Paul Geeser | Software Engineer",
     heading: "Hi, I'm Paul Geeser 👋",
     description:
         "Software Engineer focused on blockchain for 5 years, with more than 10 years of experience in electrical and mechanical engineering.",
     links: [
-        { href: "mailto:contact@pauldev.sh", label: "Email", icon: <SiGmail className="size-6" /> },
-        { href: "https://x.com/paul__dev", label: "X", icon: <SiX className="size-5" /> },
-        { href: "https://github.com/pauldev20", label: "GitHub", icon: <SiGithub className="size-5" /> },
-        { href: "https://linkedin.com/in/paulgeeser", label: "LinkedIn", icon: <Linkedin className="size-5" /> },
+        {
+            href: "mailto:contact@pauldev.sh",
+            username: "contact@pauldev.sh",
+            label: "Email",
+            icon: faEnvelope
+        },
+        { href: "https://x.com/paul__dev", username: "paul__dev", label: "X", icon: faXTwitter },
+        {
+            href: "https://github.com/pauldev20",
+            username: "pauldev20",
+            label: "GitHub",
+            icon: faGithub,
+        },
+        {
+            href: "https://linkedin.com/in/paulgeeser",
+            username: "paulgeeser",
+            label: "LinkedIn",
+            icon: faLinkedinIn,
+        },
     ],
     about: 'Since a young age, I\'ve been interested in all kinds of electronic devices. I began by repairing and building tube amplifiers, moved into microcontrollers, and eventually progressed to software development. After studying "Industrial Engineering", I joined 42 Heilbronn, a project-based coding school, and completed the program and an internship by the end of 2024. I’m especially interested in blockchain (mainly Ethereum) and privacy-preserving software with a focus on full-stack engineering. I enjoy fast, MVP-driven iterations that grow into clean, user-friendly products, prioritizing what matters. Skilled in reverse engineering, energetic, and committed to continual learning. In my free time, I still tinker with hardware and music gear.',
     workExperiences: [
@@ -216,27 +220,3 @@ const pageData = {
     contactDescription:
         "Feel free to reach out to me! I'm always looking for new opportunities and collaborations or just a chat.",
 };
-
-/* -------------------------------------------------------------------------- */
-/*                                  Metadata                                  */
-/* -------------------------------------------------------------------------- */
-export const metadata: Metadata = {
-    description: pageData.description,
-};
-
-/* -------------------------------------------------------------------------- */
-/*                                  HomePage                                  */
-/* -------------------------------------------------------------------------- */
-export default function Home() {
-    return (
-        <main className="flex flex-col max-w-4xl space-y-10">
-            <HeroSection heading={pageData.heading} description={pageData.description} links={pageData.links} />
-            <AboutSection aboutText={pageData.about} />
-            <WorkExperience workExperiences={pageData.workExperiences} />
-            <EducationSection education={pageData.education} />
-            <SkillsSection description={pageData.skillsDescription} skills={pageData.skills} />
-            <HackathonsSection description={pageData.hackathonsDescription} hackathons={pageData.hackathons} />
-            <ContactSection description={pageData.contactDescription} links={pageData.links} />
-        </main>
-    );
-}

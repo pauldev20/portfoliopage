@@ -1,28 +1,26 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter as FontSans } from "next/font/google";
+
 import "./globals.css";
+
+import { pageData } from "@/pageData";
 
 /* -------------------------------------------------------------------------- */
 /*                                    Fonts                                   */
 /* -------------------------------------------------------------------------- */
-const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
-    variable: "--font-geist-sans",
-    weight: "100 900",
-});
-const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
-    variable: "--font-geist-mono",
-    weight: "100 900",
+const fontSans = FontSans({
+    subsets: ["latin"],
+    variable: "--font-sans",
 });
 
 /* -------------------------------------------------------------------------- */
 /*                                  Metadata                                  */
 /* -------------------------------------------------------------------------- */
 export const metadata: Metadata = {
-    title: "Paul Geeser | Software Engineer",
+    title: pageData.pageTitle,
+	metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
 };
 
 /* -------------------------------------------------------------------------- */
@@ -36,7 +34,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background font-sans antialiased flex justify-center mx-auto py-8 sm:py-16 px-6`}
+                className={`${fontSans.variable} min-h-screen bg-background font-sans antialiased flex justify-center mx-auto py-8 sm:py-16 px-6`}
             >
                 {children}
 

@@ -50,23 +50,36 @@ export const TypingAnimation = ({
         }
     }, [index, chars, speed, isComplete, handleComplete, handAnimation]);
 
+    const fullText = useMemo(() => {
+        return text + (handAnimation && text.includes("👋") ? " " : "");
+    }, [text, handAnimation]);
+
     return (
         <div
             className={cn(
-                "inline-block overflow-visible whitespace-pre border-r-4 border-solid border-black animate-blink-caret",
+                "inline-block overflow-visible whitespace-pre relative",
                 className,
             )}
             aria-label={`Typing animation: ${text}`}
             aria-live="polite"
         >
-            {displayedText}
-            <span
-                className={cn("animate-wave origin-wave-origin inline-block pr-1", { hidden: !handAnimationState })}
-                role="img"
-                aria-label="waving hand"
-            >
-                👋
+            <span className="invisible opacity-0" aria-hidden="true">
+                {fullText}
+                <span className="pr-1" />
             </span>
+
+            <div className="absolute top-0 left-0 w-full">
+                <span className="animate-blink-caret border-r-4 border-solid border-black">
+                    {displayedText}
+                    <span
+                        className={cn("animate-wave origin-wave-origin inline-block pr-1", { hidden: !handAnimationState })}
+                        role="img"
+                        aria-label="waving hand"
+                    >
+                        👋
+                    </span>
+                </span>
+            </div>
         </div>
     );
 };

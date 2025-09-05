@@ -1,13 +1,14 @@
 import Markdown from "react-markdown";
 
 import BaseSection from "@/components/BaseSection";
+import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 interface ContactSectionProps {
     description: string;
     links: {
         label: string;
-        icon: React.ReactNode;
+        icon: IconDefinition;
         href: string;
     }[];
 }

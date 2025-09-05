@@ -1,22 +1,26 @@
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TypingAnimation } from "@/components/TypingAnimation";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 
 interface HeroLinkProps {
     href: string;
     label: string;
-    icon: React.ReactNode;
+	username: string;
+    icon: IconDefinition;
 }
 
-function HeroLink({ href, label, icon }: HeroLinkProps) {
+function HeroLink({ href, label, icon, username }: HeroLinkProps) {
     return (
         <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
             aria-label={label}
         >
-            {icon} {label}
+            <FontAwesomeIcon icon={icon} className="size-5" /> {username}
         </a>
     );
 }
@@ -32,9 +36,8 @@ export default function HeroSection({ heading, description, links }: HeroSection
         <section id="hero">
             <div className="mx-auto w-full space-y-8">
                 <div className="gap-3 sm:gap-5 md:gap-12 flex flex-col md:flex-row justify-center items-center">
-                    <Avatar className="size-36 border">
-                        <AvatarImage alt="Paul Geeser" src="/me.jpg" />
-                        <AvatarFallback>PG</AvatarFallback>
+                    <Avatar className="size-38 border">
+                        <AvatarImage alt={heading} src="/me.jpg" />
                     </Avatar>
                     <div className="flex-col flex items-center md:items-start space-y-1.5">
                         <h1 className="text-3xl font-bold sm:text-5xl xl:text-6xl/none flex">
@@ -43,7 +46,7 @@ export default function HeroSection({ heading, description, links }: HeroSection
                         <p className="max-w-[600px] md:text-xl text-center md:text-left">{description}</p>
                         <div className="flex gap-4">
                             {links.map((link) => (
-                                <HeroLink key={link.label} href={link.href} label={link.label} icon={link.icon} />
+                                <HeroLink key={link.label} {...link} />
                             ))}
                         </div>
                     </div>
