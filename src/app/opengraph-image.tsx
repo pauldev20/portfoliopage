@@ -1,10 +1,14 @@
 import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+// biome-ignore lint/style/useNodejsImportProtocol: fs/promises
+import { readFile } from 'fs/promises';
 import { ImageResponse } from "next/og";
+// biome-ignore lint/style/useNodejsImportProtocol: path
+import { join } from 'path';
 
 import { pageData } from "@/pageData";
 
 export const alt = pageData.pageTitle;
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -24,11 +28,11 @@ function FAIcon({ icon, size = 24, color = "#000" }: { icon: IconDefinition; siz
 }
 
 export default async function Image() {
-    const imageBuffer = await fetch(new URL("../../public/me.jpg", import.meta.url)).then((res) => res.arrayBuffer());
+	const imageBuffer = await readFile(join(process.cwd(), "public", "me.jpg"));
     const imageBase64 = `data:image/jpeg;base64,${Buffer.from(imageBuffer).toString("base64")}`;
 
-    const interRegular = fetch(new URL("../fonts/Inter-Regular.ttf", import.meta.url)).then((res) => res.arrayBuffer());
-    const interBold = fetch(new URL("../fonts/Inter-Bold.ttf", import.meta.url)).then((res) => res.arrayBuffer());
+	const interRegular = readFile(join(process.cwd(), "src", "fonts", "Inter-Regular.ttf"));
+    const interBold = readFile(join(process.cwd(), "src", "fonts", "Inter-Bold.ttf"));
 
     return new ImageResponse(
         <div tw="flex flex-col items-center justify-center w-full h-full bg-white p-4" style={{ fontFamily: "Inter" }}>
