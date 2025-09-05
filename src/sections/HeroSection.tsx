@@ -43,7 +43,7 @@ export default function HeroSection({ heading, description, links }: HeroSection
                             <TypingAnimation text={heading} speed={150} handAnimation={true} />
                         </h1>
                         <p className="max-w-[600px] md:text-xl text-center md:text-left">{description}</p>
-                        <div className="flex gap-4">
+                        <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
                             {links.map((link) => (
                                 <HeroLink key={link.label} {...link} />
                             ))}
