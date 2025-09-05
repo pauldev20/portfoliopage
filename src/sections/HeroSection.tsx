@@ -1,13 +1,12 @@
+import { TypingAnimation } from "@/components/TypingAnimation";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TypingAnimation } from "@/components/TypingAnimation";
-
 
 interface HeroLinkProps {
     href: string;
     label: string;
-	username: string;
+    username: string;
     icon: IconDefinition;
 }
 

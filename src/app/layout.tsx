@@ -20,7 +20,7 @@ const fontSans = FontSans({
 /* -------------------------------------------------------------------------- */
 export const metadata: Metadata = {
     title: pageData.pageTitle,
-	metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
 };
 
 /* -------------------------------------------------------------------------- */

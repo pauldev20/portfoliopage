@@ -1,5 +1,5 @@
-import { faLinkedinIn, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export const pageData = {
     pageTitle: "Paul Geeser | Software Engineer",
@@ -11,7 +11,7 @@ export const pageData = {
             href: "mailto:contact@pauldev.sh",
             username: "contact@pauldev.sh",
             label: "Email",
-            icon: faEnvelope
+            icon: faEnvelope,
         },
         { href: "https://x.com/paul__dev", username: "paul__dev", label: "X", icon: faXTwitter },
         {

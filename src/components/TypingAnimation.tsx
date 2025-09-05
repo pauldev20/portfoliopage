@@ -56,10 +56,7 @@ export const TypingAnimation = ({
 
     return (
         <div
-            className={cn(
-                "inline-block overflow-visible whitespace-pre relative",
-                className,
-            )}
+            className={cn("inline-block overflow-visible whitespace-pre relative", className)}
             aria-label={`Typing animation: ${text}`}
             aria-live="polite"
         >
@@ -72,7 +69,9 @@ export const TypingAnimation = ({
                 <span className="animate-blink-caret border-r-4 border-solid border-black">
                     {displayedText}
                     <span
-                        className={cn("animate-wave origin-wave-origin inline-block pr-1", { hidden: !handAnimationState })}
+                        className={cn("animate-wave origin-wave-origin inline-block pr-1", {
+                            hidden: !handAnimationState,
+                        })}
                         role="img"
                         aria-label="waving hand"
                     >
