@@ -3,7 +3,7 @@ import { ResumeCard } from "@/components/ResumeCard";
 
 interface WorkExperience {
     company: string;
-    companyUrl: string;
+    companyUrl?: string;
     companyLogo: string;
     position: string;
     startDate: Date;
@@ -18,7 +18,7 @@ interface WorkExperienceProps {
 export default function WorkExperience({ workExperiences }: WorkExperienceProps) {
     return (
         <BaseSection title="Work Experience">
-            <div className="flex flex-col gap-y-2">
+            <div className="flex flex-col gap-y-2.5">
                 {workExperiences
                     .sort((a, b) => b.startDate.getTime() - a.startDate.getTime())
                     .map((workExperience) => (
