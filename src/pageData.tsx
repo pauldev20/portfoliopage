@@ -1,5 +1,4 @@
-import { faGithub, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import type { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faGithub, faLinkedinIn, faXTwitter, type IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export const pageData = {
@@ -12,20 +11,20 @@ export const pageData = {
             href: "mailto:contact@pauldev.sh",
             username: "contact@pauldev.sh",
             label: "Email",
-            icon: faEnvelope as IconProp,
+            icon: faEnvelope,
         },
-        { href: "https://x.com/paul__dev", username: "paul__dev", label: "X", icon: faXTwitter as IconProp },
+        { href: "https://x.com/paul__dev", username: "paul__dev", label: "X", icon: faXTwitter },
         {
             href: "https://github.com/pauldev20",
             username: "pauldev20",
             label: "GitHub",
-            icon: faGithub as IconProp,
+            icon: faGithub,
         },
         {
             href: "https://linkedin.com/in/paulgeeser",
             username: "paulgeeser",
             label: "LinkedIn",
-            icon: faLinkedinIn as IconProp,
+            icon: faLinkedinIn,
         },
     ],
     about: "I started with a lot of technical interest in all kinds of hardware, especially guitar tube amps. Music pulled me into electronics, then into microcontrollers and IoT, and finally into software. After my first studies in “**Industrial Engineering**” in March 2022, I joined 42 Heilbronn (a project-based coding school) and finished the program plus an internship by December 2024. Software engineering, is not just a job for me, it is a passion. I enjoy reading and **reverse-engineering** code to keep learning and to find creative, fast, and elegant solutions.\n\nSince December 2024, I have been working as a “**Software Engineer & Head of IT**” at Arkadia Heilbronn gGmbH. Arkadia reimagines the education system with a focus on software engineering. I build and maintain our websites and internal tools. I designed and now maintain the on-site IT for the company and our coding school students, from networking and device management to CI/CD and observability. I like pragmatic, MVP-first iterations and refactoring toward good and clean code incorporating user feedback, with a focus on **full-stack engineering**.\n\nI am especially interested in Ethereum and privacy-preserving identity. Participating in **Ethereum hackathons** is one of my favorite things to do, prototyping ideas, learning from the community, and staying close to the ecosystem. When I am not coding or thinking about code, which is rare, you will find me tinkering with hardware, cars, or music gear.",
