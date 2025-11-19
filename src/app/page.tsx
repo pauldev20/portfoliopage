@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 import AboutSection from "@/sections/AboutSection";
-import ContactSection from "@/sections/ContactSection";
 import EducationSection from "@/sections/EducationSection";
 import HackathonsSection from "@/sections/HackathonsSection";
 import HeroSection from "@/sections/HeroSection";
 import SkillsSection from "@/sections/SkillsSection";
 import WorkExperience from "@/sections/WorkExperience";
+// import ProjectsSection from "@/sections/ProjectsSection";
 
 import { pageData } from "@/pageData";
 
@@ -25,11 +25,11 @@ export default function Home() {
         <main className="flex flex-col max-w-4xl space-y-10">
             <HeroSection heading={pageData.heading} description={pageData.description} links={pageData.links} />
             <AboutSection aboutText={pageData.about} />
-            <WorkExperience workExperiences={pageData.workExperiences} />
-            <EducationSection education={pageData.education} />
-            <SkillsSection description={pageData.skillsDescription} skills={pageData.skills} />
             <HackathonsSection description={pageData.hackathonsDescription} hackathons={pageData.hackathons} />
-            <ContactSection description={pageData.contactDescription} links={pageData.links} />
+            {/* <ProjectsSection description={pageData.projectsDescription} projects={pageData.projects} /> */}
+            <WorkExperience workExperiences={pageData.workExperiences} />
+            <SkillsSection description={pageData.skillsDescription} skills={pageData.skills} />
+            <EducationSection education={pageData.education} />
         </main>
     );
 }
