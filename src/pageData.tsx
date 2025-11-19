@@ -1,4 +1,5 @@
 import { faGithub, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export const pageData = {
@@ -11,32 +12,33 @@ export const pageData = {
             href: "mailto:contact@pauldev.sh",
             username: "contact@pauldev.sh",
             label: "Email",
-            icon: faEnvelope,
+            icon: faEnvelope as IconProp,
         },
-        { href: "https://x.com/paul__dev", username: "paul__dev", label: "X", icon: faXTwitter },
+        { href: "https://x.com/paul__dev", username: "paul__dev", label: "X", icon: faXTwitter as IconProp },
         {
             href: "https://github.com/pauldev20",
             username: "pauldev20",
             label: "GitHub",
-            icon: faGithub,
+            icon: faGithub as IconProp,
         },
         {
             href: "https://linkedin.com/in/paulgeeser",
             username: "paulgeeser",
             label: "LinkedIn",
-            icon: faLinkedinIn,
+            icon: faLinkedinIn as IconProp,
         },
     ],
-    about: 'Since a young age, I\'ve been interested in all kinds of electronic devices. I began by repairing and building tube amplifiers, moved into microcontrollers, and eventually progressed to software development. After studying "Industrial Engineering", I joined 42 Heilbronn, a project-based coding school, and completed the program and an internship by the end of 2024. I’m especially interested in blockchain (mainly Ethereum) and privacy-preserving software with a focus on full-stack engineering. I enjoy fast, MVP-driven iterations that grow into clean, user-friendly products, prioritizing what matters. Skilled in reverse engineering, energetic, and committed to continual learning. In my free time, I still tinker with hardware and music gear.',
+    about: "I started with a lot of technical interest in all kinds of hardware, especially guitar tube amps. Music pulled me into electronics, then into microcontrollers and IoT, and finally into software. After my first studies in “**Industrial Engineering**” in March 2022, I joined 42 Heilbronn (a project-based coding school) and finished the program plus an internship by December 2024. Software engineering, is not just a job for me, it is a passion. I enjoy reading and **reverse-engineering** code to keep learning and to find creative, fast, and elegant solutions.\n\nSince December 2024, I have been working as a “**Software Engineer & Head of IT**” at Arkadia Heilbronn gGmbH. Arkadia reimagines the education system with a focus on software engineering. I build and maintain our websites and internal tools. I designed and now maintain the on-site IT for the company and our coding school students, from networking and device management to CI/CD and observability. I like pragmatic, MVP-first iterations and refactoring toward good and clean code incorporating user feedback, with a focus on **full-stack engineering**.\n\nI am especially interested in Ethereum and privacy-preserving identity. Participating in **Ethereum hackathons** is one of my favorite things to do, prototyping ideas, learning from the community, and staying close to the ecosystem. When I am not coding or thinking about code, which is rare, you will find me tinkering with hardware, cars, or music gear.",
     workExperiences: [
         {
             company: "Arkadia Heilbronn gGmbH",
-            // companyUrl: "https://arkadia.hn",
-            companyLogo: "/arkadia.jpeg",
+            companyUrl: "https://arkadia.hn",
+            companyLogo: "/arkadia.png",
             position: "Software Engineer & Head of IT",
             startDate: new Date("2024-12-01"),
             endDate: null,
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            description:
+                "At Arkadia Heilbronn, a company that runs a coding school and community tech programs, I build and maintain the company’s **multiple websites** and **internal/developer tools**, designed and now operate the entire on-site **IT infrastructure** used by staﬀ and students daily.",
         },
         {
             company: "synthavo GmbH",
@@ -45,7 +47,16 @@ export const pageData = {
             position: "Software Engineer Intern",
             startDate: new Date("2023-08-01"),
             endDate: new Date("2024-01-01"),
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            description:
+                "At synthavo, a company specializing in AI-powered replacement part recognition for industrial machinery, I developed several internal **workflow optimization tools**, enhanced the company’s **web app + backend**, and improved the **AI data pipeline** for better performance and eﬃciency.",
+        },
+		{
+            company: "Paul Geeser - Self-Employed",
+            companyLogo: "/me.jpg",
+            position: "Software Engineer",
+            startDate: new Date("2020-01-02"),
+            endDate: null,
+			description: "Working as a self-employed software engineer supporting clients with **full-stack solutions** across web, **mobile**, and **backend**. Delivered a large-scale study-execution platform used in school settings, featuring **offline functionality**, secure data storage, and full GDPR compliance. Built custom automation and **web-scraping** tools that helped clients save time and reduce manual work.",
         },
         {
             company: "Soundland GmbH",
@@ -54,7 +65,7 @@ export const pageData = {
             position: "Specialist Retail Salesperson",
             startDate: new Date("2019-10-01"),
             endDate: new Date("2020-09-01"),
-            description: "Description 1",
+			description: "Worked as a **Specialist Retail Salesperson** focusing on guitars and related equipment. Supported customers with detailed product recommendations, guided purchase decisions, and demonstrated gear in-store. Additionally performed repairs and diagnostics on tube-amps and serviced a wide range of electronic music equipment."
         },
     ],
     education: [
@@ -64,6 +75,7 @@ export const pageData = {
             subtitle: "Software Engineering",
             startDate: new Date("2022-03-01"),
             endDate: new Date("2024-12-01"),
+			description: "Completed a 2-year intensive software engineering program at 42 Heilbronn, focusing on practical, project-based learning in a collaborative environment. Gained hands-on experience in C and C++ and especially colaborative programming and teamwork.",
         },
         {
             title: "Kolping Gymnasium Fellbach",
@@ -80,8 +92,8 @@ export const pageData = {
             endDate: new Date("2024-07-01"),
         },
     ],
-    skillsDescription: "Always learning...",
-    skills: ["JavaScript", "TypeScript", "React", "Next.js", "C", "C++", "Blockchain"],
+    skillsDescription: "From embedded systems to blockchain and everything in between, always learning and always curious...",
+    skills: ["JavaScript", "TypeScript", "React", "Next.js", "C", "C++", "Python", "Flutter", "Dart", "Blockchain", "Electrical Engineering", "Embedded Systems", "Technical Writing", "Documentation Writing"],
     hackathonsDescription: "Attending to hackathons",
     hackathons: [
         {
