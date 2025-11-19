@@ -31,6 +31,7 @@ export default function WorkExperience({ workExperiences }: WorkExperienceProps)
                             badges={[]}
                             period={`${workExperience.startDate.toLocaleString("en-US", { month: "long", year: "numeric" })} - ${workExperience.endDate ? workExperience.endDate.toLocaleString("en-US", { month: "long", year: "numeric" }) : "present"}`}
                             description={workExperience.description}
+                            href={workExperience.companyUrl}
                         />
                     ))}
             </div>

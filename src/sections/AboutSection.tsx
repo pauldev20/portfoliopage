@@ -1,5 +1,4 @@
-import Markdown from "react-markdown";
-
+import { RenderedText } from "@/components/RenderedText";
 import BaseSection from "@/components/BaseSection";
 
 interface AboutSectionProps {
@@ -9,9 +8,7 @@ interface AboutSectionProps {
 export default function AboutSection({ aboutText }: AboutSectionProps) {
     return (
         <BaseSection title="About Me">
-            <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                {aboutText}
-            </Markdown>
+            <RenderedText text={aboutText} />
         </BaseSection>
     );
 }
