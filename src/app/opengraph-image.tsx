@@ -37,19 +37,19 @@ export default async function Image() {
 
     return new ImageResponse(
         <div tw="flex flex-col items-center justify-center w-full h-full bg-white p-4" style={{ fontFamily: "Inter" }}>
-            <div tw="flex flex-row items-center justify-center w-full max-w-[1060px]" style={{ gap: "56px" }}>
+            <div tw="flex flex-row items-center justify-center w-full max-w-[1090px]" style={{ gap: "50px" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={imageBase64} alt={pageData.pageTitle} width={280} height={280} tw="rounded-full shadow-lg" />
+                <img src={imageBase64} alt={pageData.pageTitle} width={290} height={290} tw="rounded-full shadow-lg" />
 
                 <div tw="flex flex-col justify-center flex-1" style={{ gap: "22px" }}>
-                    <h1 tw="font-bold text-6xl mb-0 mt-0">{pageData.heading}</h1>
-                    <p tw="max-w-[800px] text-xl mb-0 mt-0">{pageData.description}</p>
+                    <h1 tw="font-bold text-7xl mb-0 mt-0">{pageData.heading}</h1>
+                    <p tw="max-w-[800px] text-2xl mb-0 mt-0">{pageData.description}</p>
 
                     <div tw="flex flex-wrap" style={{ gap: "12px" }}>
                         {pageData.links.map((link) => (
                             <span
                                 key={link.label}
-                                tw="border-slate-200 px-2.5 py-1 rounded-md font-bold text-slate-900 flex items-center justify-center bg-black text-white shadow-sm"
+                                tw="border-slate-200 px-2.5 py-1 text-xl rounded-md font-bold text-slate-900 flex items-center justify-center bg-black text-white shadow-sm"
                                 style={{ gap: "6px" }}
                             >
                                 <FAIcon icon={link.icon} color="#fff" /> {link.username}
