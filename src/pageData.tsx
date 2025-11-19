@@ -1,4 +1,4 @@
-import { faGithub, faLinkedinIn, faXTwitter, type IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { type IconDefinition, faGithub, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export const pageData = {
@@ -49,13 +49,14 @@ export const pageData = {
             description:
                 "At synthavo, a company specializing in AI-powered replacement part recognition for industrial machinery, I developed several internal **workflow optimization tools**, enhanced the company’s **web app + backend**, and improved the **AI data pipeline** for better performance and eﬃciency.",
         },
-		{
+        {
             company: "Paul Geeser - Self-Employed",
             companyLogo: "/me.jpg",
             position: "Software Engineer",
             startDate: new Date("2020-01-02"),
             endDate: null,
-			description: "Working as a self-employed software engineer supporting clients with **full-stack solutions** across web, **mobile**, and **backend**. Delivered a large-scale study-execution platform used in school settings, featuring **offline functionality**, secure data storage, and full GDPR compliance. Built custom automation and **web-scraping** tools that helped clients save time and reduce manual work.",
+            description:
+                "Working as a self-employed software engineer supporting clients with **full-stack solutions** across web, **mobile**, and **backend**. Delivered a large-scale study-execution platform used in school settings, featuring **offline functionality**, secure data storage, and full GDPR compliance. Built custom automation and **web-scraping** tools that helped clients save time and reduce manual work.",
         },
         {
             company: "Soundland GmbH",
@@ -64,7 +65,8 @@ export const pageData = {
             position: "Specialist Retail Salesperson",
             startDate: new Date("2019-10-01"),
             endDate: new Date("2020-09-01"),
-			description: "Worked as a **Specialist Retail Salesperson** focusing on guitars and related equipment. Supported customers with detailed product recommendations, guided purchase decisions, and demonstrated gear in-store. Additionally performed repairs and diagnostics on tube-amps and serviced a wide range of electronic music equipment."
+            description:
+                "Worked as a **Specialist Retail Salesperson** focusing on guitars and related equipment. Supported customers with detailed product recommendations, guided purchase decisions, and demonstrated gear in-store. Additionally performed repairs and diagnostics on tube-amps and serviced a wide range of electronic music equipment.",
         },
     ],
     education: [
@@ -74,7 +76,8 @@ export const pageData = {
             subtitle: "Software Engineering",
             startDate: new Date("2022-03-01"),
             endDate: new Date("2024-12-01"),
-			description: "Completed a 2-year intensive software engineering program at 42 Heilbronn, focusing on practical, project-based learning in a collaborative environment. Gained hands-on experience in C and C++ and especially colaborative programming and teamwork.",
+            description:
+                "Completed a 2-year intensive software engineering program at 42 Heilbronn, focusing on practical, project-based learning in a collaborative environment. Gained hands-on experience in C and C++ and especially colaborative programming and teamwork.",
         },
         {
             title: "Kolping Gymnasium Fellbach",
@@ -91,8 +94,24 @@ export const pageData = {
             endDate: new Date("2024-07-01"),
         },
     ],
-    skillsDescription: "From embedded systems to blockchain and everything in between, always learning and always curious...",
-    skills: ["JavaScript", "TypeScript", "React", "Next.js", "C", "C++", "Python", "Flutter", "Dart", "Blockchain", "Electrical Engineering", "Embedded Systems", "Technical Writing", "Documentation Writing"],
+    skillsDescription:
+        "From embedded systems to blockchain and everything in between, always learning and always curious...",
+    skills: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "C",
+        "C++",
+        "Python",
+        "Flutter",
+        "Dart",
+        "Blockchain",
+        "Electrical Engineering",
+        "Embedded Systems",
+        "Technical Writing",
+        "Documentation Writing",
+    ],
     hackathonsDescription: "Attending to hackathons",
     hackathons: [
         {

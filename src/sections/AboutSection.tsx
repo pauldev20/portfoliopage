@@ -1,5 +1,5 @@
-import { RenderedText } from "@/components/RenderedText";
 import BaseSection from "@/components/BaseSection";
+import { RenderedText } from "@/components/RenderedText";
 
 interface AboutSectionProps {
     aboutText: string;

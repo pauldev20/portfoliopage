@@ -7,7 +7,6 @@ import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { readFile } from "fs/promises";
 import { ImageResponse } from "next/og";
 
-
 import { pageData } from "@/pageData";
 
 export const alt = pageData.pageTitle;

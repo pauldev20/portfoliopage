@@ -37,14 +37,14 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-			<body
+            <body
                 className={`${fontSans.variable} min-h-screen bg-background font-sans antialiased flex flex-col items-center mx-auto py-8 sm:py-16 px-5`}
             >
                 {children}
 
-				<footer className="py-5 sm:py-0 sm:pt-10 text-center text-sm text-muted-foreground mt-5">
-					Made with ❤️ by <strong>pauldev</strong>
-				</footer>
+                <footer className="py-5 sm:py-0 sm:pt-10 text-center text-sm text-muted-foreground mt-5">
+                    Made with ❤️ by <strong>pauldev</strong>
+                </footer>
 
                 {/* ------------------------------- Bottom Blur ------------------------------ */}
                 <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background" />
@@ -53,7 +53,7 @@ export default function RootLayout({
                 <Analytics />
 
                 <BackgroundGraphics />
-			</body>
+            </body>
         </html>
     );
 }

@@ -33,7 +33,13 @@ export const ResumeCard = ({
     return (
         <Card className="py-0.5 bg-transparent">
             <div className="grid grid-cols-[auto_1fr] gap-x-2.5">
-				<Image className="object-contain size-10 md:size-11 border rounded-full bg-white" src={logoUrl} alt={altText} width={40} height={40} />
+                <Image
+                    className="object-contain size-10 md:size-11 border rounded-full bg-white"
+                    src={logoUrl}
+                    alt={altText}
+                    width={40}
+                    height={40}
+                />
                 <div className="flex flex-col min-w-0">
                     <div className="flex items-start justify-between gap-x-1">
                         <div className="flex-1 min-w-0">
@@ -59,9 +65,7 @@ export const ResumeCard = ({
                             {period}
                         </div>
                     </div>
-                    {description && (
-						<RenderedText text={description} className="mt-1.5" />
-                    )}
+                    {description && <RenderedText text={description} className="mt-1.5" />}
                 </div>
             </div>
         </Card>
