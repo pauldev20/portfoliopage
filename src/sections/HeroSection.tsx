@@ -1,5 +1,5 @@
 import { TypingAnimation } from "@/components/TypingAnimation";
-import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
@@ -7,7 +7,7 @@ interface HeroLinkProps {
     href: string;
     label: string;
     username: string;
-    icon: IconDefinition;
+    icon: IconProp;
 }
 
 function HeroLink({ href, label, icon, username }: HeroLinkProps) {

@@ -53,7 +53,7 @@ export default async function Image() {
                                 tw="border-slate-200 p-2 px-3 rounded-xl font-bold text-slate-900 bg-slate-200 flex items-center justify-center"
                                 style={{ gap: "6px" }}
                             >
-                                <FAIcon icon={link.icon} /> {link.username}
+                                <FAIcon icon={link.icon as IconDefinition} /> {link.username}
                             </span>
                         ))}
                     </div>
