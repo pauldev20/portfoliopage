@@ -1,7 +1,7 @@
 import { TypingAnimation } from "@/components/TypingAnimation";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 interface HeroLinkProps {
     href: string;
@@ -35,9 +35,7 @@ export default function HeroSection({ heading, description, links }: HeroSection
         <section id="hero">
             <div className="mx-auto w-full space-y-8">
                 <div className="gap-3 sm:gap-5 md:gap-12 flex flex-col md:flex-row justify-center items-center">
-                    <Avatar className="size-38 border">
-                        <AvatarImage alt={heading} src="/me.jpg" />
-                    </Avatar>
+					<Image src="/me.jpg" alt={heading} width={152} height={152} className="rounded-full" />
                     <div className="flex-col flex items-center md:items-start space-y-1.5">
                         <h1 className="text-3xl font-bold sm:text-5xl xl:text-6xl/none flex">
                             <TypingAnimation text={heading} speed={150} handAnimation={true} />
