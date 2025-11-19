@@ -3,8 +3,8 @@
 import { RenderedText } from "@/components/RenderedText";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { RoundImage } from "./RoundImage";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 
 interface ResumeCardProps {
@@ -33,13 +33,10 @@ export const ResumeCard = ({
     return (
         <Card className="py-0.5 bg-transparent">
             <div className="grid grid-cols-[auto_1fr] gap-x-2.5">
-                <Image
-                    className="object-contain size-10 md:size-11 border rounded-full bg-white"
-                    src={logoUrl}
-                    alt={altText}
-                    width={40}
-                    height={40}
-                />
+				<RoundImage
+					image={logoUrl}
+					alt={altText}
+				/>
                 <div className="flex flex-col min-w-0">
                     <div className="flex items-start justify-between gap-x-1">
                         <div className="flex-1 min-w-0">
