@@ -62,7 +62,9 @@ const GlobeComponent = forwardRef<GlobeComponentRef, GlobeProps>(
             let focusPhi = 0;
             let focusTheta = 0;
 
-            if (!globeRef.current) return;
+            if (!globeRef.current) {
+                return;
+            }
 
             const globe = createGlobe(globeRef.current, {
                 devicePixelRatio: 2,
@@ -113,7 +115,9 @@ const GlobeComponent = forwardRef<GlobeComponentRef, GlobeProps>(
 
             return () => {
                 globe.destroy();
-                if (focusTimeout.current) clearTimeout(focusTimeout.current);
+                if (focusTimeout.current) {
+                    clearTimeout(focusTimeout.current);
+                }
             };
         }, [width, focusTime, mappedMarkers, darkMode]);
 
