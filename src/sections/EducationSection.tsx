@@ -8,6 +8,7 @@ interface Education {
     description?: string;
     startDate: Date;
     endDate: Date;
+    link?: string;
 }
 
 interface EducationSectionProps {
@@ -26,6 +27,7 @@ export default function EducationSection({ education }: EducationSectionProps) {
                             logoUrl={education.image}
                             altText={education.title}
                             title={education.title}
+                            href={education.link}
                             subtitle={education.subtitle}
                             period={`${education.startDate.toLocaleString("en-US", { month: "long", year: "numeric" })} - ${education.endDate ? education.endDate.toLocaleString("en-US", { month: "long", year: "numeric" }) : "present"}`}
                             description={education.description}
