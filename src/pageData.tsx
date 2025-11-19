@@ -36,7 +36,6 @@ export const pageData = {
             companyLogo: "/arkadia.png",
             position: "Software Engineer & Head of IT",
             startDate: new Date("2024-12-01"),
-            endDate: null,
             description:
                 "At Arkadia Heilbronn, a company that runs a coding school and community tech programs, I build and maintain the company’s **multiple websites** and **internal/developer tools**, designed and now operate the entire on-site **IT infrastructure** used by staﬀ and students daily.",
         },
@@ -55,7 +54,6 @@ export const pageData = {
             companyLogo: "/me.jpg",
             position: "Software Engineer",
             startDate: new Date("2020-01-02"),
-            endDate: null,
             description:
                 "Working as a self-employed software engineer supporting clients with **full-stack solutions** across web, **mobile**, and **backend**. Delivered a large-scale study-execution platform used in school settings, featuring **offline functionality**, secure data storage, and full GDPR compliance. Built custom automation and **web-scraping** tools that helped clients save time and reduce manual work.",
         },
