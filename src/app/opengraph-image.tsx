@@ -1,14 +1,16 @@
+export const runtime = "nodejs";
+
+// biome-ignore lint/style/useNodejsImportProtocol: path
+import { join } from "path";
 import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 // biome-ignore lint/style/useNodejsImportProtocol: fs/promises
-import { readFile } from 'fs/promises';
+import { readFile } from "fs/promises";
 import { ImageResponse } from "next/og";
-// biome-ignore lint/style/useNodejsImportProtocol: path
-import { join } from 'path';
+
 
 import { pageData } from "@/pageData";
 
 export const alt = pageData.pageTitle;
-export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -28,10 +30,10 @@ function FAIcon({ icon, size = 24, color = "#000" }: { icon: IconDefinition; siz
 }
 
 export default async function Image() {
-	const imageBuffer = await readFile(join(process.cwd(), "public", "me.jpg"));
+    const imageBuffer = await readFile(join(process.cwd(), "public", "me.jpg"));
     const imageBase64 = `data:image/jpeg;base64,${Buffer.from(imageBuffer).toString("base64")}`;
 
-	const interRegular = readFile(join(process.cwd(), "src", "fonts", "Inter-Regular.ttf"));
+    const interRegular = readFile(join(process.cwd(), "src", "fonts", "Inter-Regular.ttf"));
     const interBold = readFile(join(process.cwd(), "src", "fonts", "Inter-Bold.ttf"));
 
     return new ImageResponse(
