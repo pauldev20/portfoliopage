@@ -107,6 +107,7 @@ export const pageData = {
         "Python",
         "Flutter",
         "Dart",
+        "Docker",
         "Blockchain",
         "Electrical Engineering",
         "Embedded Systems",
@@ -114,7 +115,7 @@ export const pageData = {
         "Documentation Writing",
     ],
     hackathonsDescription:
-        "Love to attend hackathons and build things with other people. Finished as a **finalist/1st place 5 times** which resulted in winnings of **over $48k in prizes** across all of them. ",
+        "Love to attend hackathons and build things with other people. Finished as a **finalist/1st place 5 times**. Which resulted in over 48k$ in prizes.",
     hackathons: [
         {
             title: "Slash Berlin",
@@ -122,142 +123,207 @@ export const pageData = {
             location: "Berlin, Germany",
             locationPoint: [52.510885, 13.3989367],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
             startDate: new Date("2022-09-23"),
             endDate: new Date("2022-09-25"),
+            description: "Built a mobile app similar to a Tamagotchi, which you can feed with the products you consume. Based on their impact on the environment, its healthy or not.",
         },
         {
             title: "ETHGlobal Lisbon",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethlisbon.png",
             location: "Lisbon, Portugal",
             locationPoint: [38.7077507, -9.1365919],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
             startDate: new Date("2023-05-12"),
             endDate: new Date("2023-05-14"),
         },
         {
             title: "ETHMunich",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethmunich.jpg",
             location: "Munich, Germany",
             locationPoint: [48.1371079, 11.5753822],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Developed a platform connecting individuals selling advertising space to businesses looking to advertise ",
             startDate: new Date("2023-08-11"),
             endDate: new Date("2023-08-13"),
+			prizes: [
+				{
+					title: "🥇 Best real world use case - 1st place",
+				},
+			],
         },
         {
             title: "ETHGlobal New York",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethnewyork.png",
             location: "New York, USA",
             locationPoint: [40.7127281, -74.0060152],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Built a platform for leveraged perpetual futures in a never-before-seen way.",
             startDate: new Date("2023-09-22"),
             endDate: new Date("2023-09-24"),
+			prizes: [
+				{
+					title: "🏆 UMA",
+				},
+				{
+					title: "🏆 NEAR Protocol",
+				},
+			],
         },
         {
             title: "ETHGlobal Istanbul",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethistanbul.png",
             location: "Istanbul, Turkey",
             locationPoint: [41.006381, 28.9758715],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Developed a fully functioning browser-based wallet that completely abstracts the different chains, so its easy to use for the user.",
             startDate: new Date("2023-11-17"),
             endDate: new Date("2023-11-19"),
             prizes: [
                 {
-                    title: "🏆 Finalist",
+                    title: "🥇 ETHGlobal Finalist",
                 },
+				{
+					title: "🥇 Best dApps on Celo Blockchain",
+				},
+				{
+					title: "🥈 Best Interchain Application",
+				},
+				{
+					title: "🥉 SAFE{CORE} ACCOUNT ABSTRACTION SDK",
+				}
             ],
         },
         {
             title: "ETHGlobal London",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethlondon.png",
             location: "London, UK",
             locationPoint: [51.5074456, -0.1277653],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Created a Farcaster Frame system for secure, anonymous polls using MACI and World ID. Reverse engineered the WorldID SDK to integrate it into a Farcaster Frame.",
             startDate: new Date("2024-03-15"),
             endDate: new Date("2024-03-17"),
+			prizes: [
+				{
+					title: "🏆 Best use of MACI",
+				},
+				{
+					title: "🥇 Best World ID Usage",
+				},
+			],
         },
         {
             title: "ETHGlobal Brussels",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethbrussels.png",
             location: "Brussels, Belgium",
             locationPoint: [50.8465573, 4.351697],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Built a betting platform designed for ETHGlobal attendees to predict hackathon finalists using showcase data, with seamless onboarding through NFC wristband sign-ins",
             startDate: new Date("2024-07-12"),
             endDate: new Date("2024-07-14"),
             prizes: [
                 {
-                    title: "🏆 Finalist",
+                    title: "🥇 ETHGlobal Finalist",
                 },
+				{
+					title: "🏆 Honorable Mention",
+				}
             ],
         },
         {
             title: "ETHGlobal Singapore",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethsingapore.png",
             location: "Singapore, Singapore",
             locationPoint: [1.357107, 103.8194992],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Developed a service which abstracts the need to manually transfer gas to each chain, this is done automatically by the service.",
             startDate: new Date("2024-09-20"),
             endDate: new Date("2024-09-22"),
             prizes: [
                 {
-                    title: "🏆 Finalist",
+                    title: "🥇 ETHGlobal Finalist",
+                },
+                {
+                    title: "🏆 Reown - Best projects building with Reown's AppKit",
+                },
+                {
+                    title: "🥇 NounsDAO - Expand Public Goods",
                 },
             ],
         },
         {
             title: "ETHGlobal San Francisco",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethsanfrancisco.png",
             location: "San Francisco, USA",
             locationPoint: [37.7792588, -122.4193286],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Created a platform for event organizers to let their customers trade beer. The more users purchase beer, the higher the prices rise.",
             startDate: new Date("2024-10-18"),
             endDate: new Date("2024-10-20"),
+            prizes: [
+                {
+                    title: "🏆 ENS - Most creative use case",
+                    link: "https://ens.domains",
+                },
+            ],
         },
         {
             title: "ETHGlobal Bangkok",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethbangkok.png",
             location: "Bangkok, Thailand",
             locationPoint: [13.7524938, 100.4935089],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Built a oracle platform similar to UMA, which utilizes WorldID to minimize the risk that the oracle is manipulated through stake-based governance.",
             startDate: new Date("2024-11-15"),
             endDate: new Date("2024-11-17"),
+            prizes: [
+                {
+                    title: "🥇 World - Best Mini App",
+                    link: "https://world.org",
+                },
+            ],
         },
         {
             title: "ETHGlobal Trifecta",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethtrifecta.png",
             location: "Online",
             locationPoint: [49.1427, 9.2109],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
-            startDate: new Date("2025-02-07"),
-            endDate: new Date("2025-02-09"),
+            description: "Developed a system that securly creates a verified assosiaction between passport data and a wallet, this is done by reading the passport datha through NFC (ICAO Doc 9303) and validating it inside a TEE, which then submits it onchain.",
+            startDate: new Date("2025-03-20"),
+            endDate: new Date("2025-03-26"),
             prizes: [
                 {
-                    title: "🏆 Finalist",
+                    title: "🥇 Trifecta TEE Track Winner",
+                },
+				{
+                    title: "🏆 Best use of Marlin TEEs",
                 },
             ],
         },
         {
             title: "ETHGlobal Taipei",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethtaipei.png",
             location: "Taipei, Taiwan",
             locationPoint: [25.0375198, 121.5636796],
             livingLocationPoint: [49.1427, 9.2109],
-            description: "Description 1",
+            description: "Built a service enabling organizations to reimburse real-world expenses for employees, students, and hackers",
             startDate: new Date("2025-04-04"),
             endDate: new Date("2025-04-06"),
         },
         {
             title: "ETHGlobal Cannes",
+            category: "Crypto/Blockchain",
             logo: "/hackathons/ethcannes.png",
             location: "Cannes, France",
             locationPoint: [43.5515198, 7.0134418],
@@ -269,7 +335,7 @@ export const pageData = {
             githubLink: "https://github.com/pauldev20/ethglobal-cannes-2025",
             prizes: [
                 {
-                    title: "🏆 Finalist",
+                    title: "🥇 ETHGlobal Finalist",
                 },
             ],
         },
