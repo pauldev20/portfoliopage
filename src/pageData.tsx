@@ -6,7 +6,7 @@ export const pageData = {
     pageTitle: "Paul Geeser | Software Engineer",
     heading: "Hi, I'm Paul Geeser 👋",
     description:
-        "Software Engineer focused on blockchain for 5 years, with more than 10 years of experience in electrical and mechanical engineering",
+        "Software Engineer focused on blockchain since 2020, with lots of experience in electrical and mechanical engineering",
     links: [
         {
             href: "mailto:contact@pauldev.sh",
