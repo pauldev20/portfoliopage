@@ -43,7 +43,7 @@ export default function HackathonsSection({ hackathons, description }: Hackathon
                         }))}
                     />
                 </div>
-                <ul className="mb-4 ml-4 divide-y divide-dashed border-l mx-1.5 border-foreground/15 divide-foreground/20 h-[600px] overflow-y-scroll md:h-auto md:overflow-y-visible">
+                <ul className="hackathons-list">
                     {hackathons
                         .sort((a, b) => b.startDate.getTime() - a.startDate.getTime())
                         .map((hackathon) => (

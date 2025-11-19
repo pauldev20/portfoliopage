@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 /* -------------------------------------------------------------------------- */
 export default function Home() {
     return (
-        <main className="flex flex-col max-w-4xl space-y-10">
+        <main className="max-w-4xl space-y-10">
             <HeroSection heading={pageData.heading} description={pageData.description} links={pageData.links} />
             <AboutSection aboutText={pageData.about} />
             <HackathonsSection description={pageData.hackathonsDescription} hackathons={pageData.hackathons} />

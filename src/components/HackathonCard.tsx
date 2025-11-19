@@ -89,53 +89,57 @@ export function HackathonCard({
     prizes,
 }: Props) {
     return (
-        <div>
-            <li className={cn("relative ml-10 py-4", className)}>
+		<li className={cn("hackathon-list-item", className)}>
+			<div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 -ml-[19.5px] md:-ml-[21.5px]">
+				{/* Image */}
 				<RoundImage
+					className="self-center"
 					image={image ?? ""}
 					alt={title}
-					className="absolute -left-15 top-2"
 				/>
-                <div className="flex flex-1 flex-col justify-start gap-2">
-					<div className="flex flex-col justify-start gap-1">
-						{/* Time */}
-						{(startDate || endDate) && <TimeBadge startDate={startDate} endDate={endDate} />}
-						
-						{/* Title */}
-						<h2 className="font-semibold leading-none">{title}</h2>
 
-						{/* Tags */}
-						<div className="flex items-center gap-3 flex-wrap">
-							{location && (
-								<p className="text-sm text-muted-foreground flex items-center gap-1">
-									<FontAwesomeIcon icon={faLocationDot as IconProp} className="size-3" />
-									{location}
-								</p>
-							)}
-							{category && (
-								<p className="text-sm text-muted-foreground flex items-center gap-1">
-									<FontAwesomeIcon icon={faTag as IconProp} className="size-3" />
-									{category}
-								</p>
-							)}
-						</div>
+				{/* Header */}
+				<div className="space-y-1">
+					{/* Time */}
+					{(startDate || endDate) && <TimeBadge startDate={startDate} endDate={endDate} />}
+					
+					{/* Title */}
+					<h2 className="font-semibold leading-none">{title}</h2>
+
+					{/* Tags */}
+					<div className="flex items-center gap-x-3 flex-wrap">
+						{location && (
+							<p className="text-sm text-muted-foreground flex items-center gap-1">
+								<FontAwesomeIcon icon={faLocationDot as IconProp} className="size-3" />
+								{location}
+							</p>
+						)}
+						{category && (
+							<p className="text-sm text-muted-foreground flex items-center gap-1">
+								<FontAwesomeIcon icon={faTag as IconProp} className="size-3" />
+								{category}
+							</p>
+						)}
 					</div>
+				</div>
 
-                    {/* Description */}
-                    {description && (
-						<RenderedText text={description} />
-                    )}
+				{/* Description */}
+				{description && (
+					<RenderedText text={description} className="col-start-2"/>
+				)}
 
-                    {/* Prizes */}
-                    {prizes && prizes.length > 0 && (
-                        <div className="mt-2 flex flex-row flex-wrap items-start gap-1">
-                            {prizes.map((prize) => (
-                                <Badge key={prize.title} variant="secondary" className="text-xs">
-                                    {prize.title}
-                                </Badge>
-                            ))}
-                        </div>
-                    )}
+				{/* Footer */}
+				<div className="space-y-1 col-start-2">
+					{/* Prizes */}
+					{prizes && prizes.length > 0 && (
+						<div className="flex flex-row flex-wrap items-start gap-1">
+							{prizes.map((prize) => (
+								<Badge key={prize.title} variant="secondary" className="text-xs">
+									{prize.title}
+								</Badge>
+							))}
+						</div>
+					)}
 
 					{/* Link(s) */}
 					{(links && links.length > 0) && (
@@ -149,8 +153,8 @@ export function HackathonCard({
 							))}
 						</div>
 					)}
-                </div>
-            </li>
-        </div>
+				</div>
+			</div>
+		</li>
     );
 }
