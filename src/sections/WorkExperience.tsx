@@ -18,7 +18,7 @@ interface WorkExperienceProps {
 export default function WorkExperience({ workExperiences }: WorkExperienceProps) {
     return (
         <BaseSection title="Work Experience">
-            <div className="flex flex-col gap-y-2.5">
+            <ul className="flex flex-col gap-y-2.5">
                 {workExperiences
                     .sort((a, b) => b.startDate.getTime() - a.startDate.getTime())
                     .map((workExperience) => (
@@ -40,7 +40,7 @@ export default function WorkExperience({ workExperiences }: WorkExperienceProps)
                             href={workExperience.companyUrl}
                         />
                     ))}
-            </div>
+            </ul>
         </BaseSection>
     );
 }

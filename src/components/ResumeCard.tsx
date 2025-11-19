@@ -30,7 +30,7 @@ export const ResumeCard = ({
     const TitleComponent = href ? Link : "h3";
 
     return (
-		<div className="grid grid-cols-[auto_1fr] gap-x-2.5 py-0.5">
+		<li className="grid grid-cols-[auto_1fr] gap-x-2.5 py-0.5">
 			<RoundImage
 				image={logoUrl}
 				alt={altText}
@@ -62,6 +62,6 @@ export const ResumeCard = ({
 				</div>
 				{description && <RenderedText text={description} className="mt-1.5" />}
 			</div>
-		</div>
+		</li>
     );
 };

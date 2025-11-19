@@ -18,7 +18,7 @@ interface EducationSectionProps {
 export default function EducationSection({ education }: EducationSectionProps) {
     return (
         <BaseSection title="Education">
-            <div className="flex flex-col gap-y-2">
+            <ul className="flex flex-col gap-y-2.5">
                 {education
                     .sort((a, b) => b.startDate.getTime() - a.startDate.getTime())
                     .map((education) => (
@@ -33,7 +33,7 @@ export default function EducationSection({ education }: EducationSectionProps) {
                             description={education.description}
                         />
                     ))}
-            </div>
+            </ul>
         </BaseSection>
     );
 }
