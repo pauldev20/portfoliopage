@@ -6,6 +6,7 @@ import { faLocationDot, faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { RoundImage } from "./RoundImage";
+import { RenderedText } from "@/components/RenderedText";
 
 interface Props {
     className?: string;
@@ -122,7 +123,7 @@ export function HackathonCard({
 
                     {/* Description */}
                     {description && (
-                        <span className="prose dark:prose-invert text-sm text-muted-foreground">{description}</span>
+						<RenderedText text={description} />
                     )}
 
                     {/* Prizes */}

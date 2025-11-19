@@ -1,8 +1,8 @@
 import BaseSection from "@/components/BaseSection";
 import GlobeComponent from "@/components/Globe";
 import { HackathonCard } from "@/components/HackathonCard";
-import Markdown from "react-markdown";
 import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { RenderedText } from "@/components/RenderedText";
 
 
 interface HackathonProps {
@@ -33,9 +33,7 @@ interface HackathonsSectionProps {
 export default function HackathonsSection({ hackathons, description }: HackathonsSectionProps) {
     return (
         <BaseSection title="Hackathons">
-            <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                {description}
-            </Markdown>
+			<RenderedText text={description} />
             <div className="flex flex-col items-center md:flex-row gap-x-2">
                 <div className="w-[400px] md:sticky md:top-0 md:self-start">
                     <GlobeComponent
