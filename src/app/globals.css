@@ -129,12 +129,12 @@
 }
 
 .hackathons-list {
-    @apply divide-y divide-dashed divide-foreground/20 h-[600px] md:h-auto overflow-y-scroll;
+    @apply divide-y divide-dashed divide-foreground/20;
 }
 
 .hackathon-list-item {
     @apply relative ml-[19.5px] md:ml-[22.5px] py-3;
     @apply before:absolute before:left-0 before:top-0 before:bottom-0 before:border-l before:border-foreground/15 before:-z-10;
     @apply first:before:top-7;
-    @apply last:before:bottom-32;
+    @apply last:before:bottom-40;
 }

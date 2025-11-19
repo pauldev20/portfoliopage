@@ -34,10 +34,10 @@ export default function HackathonsSection({ hackathons, description }: Hackathon
     return (
         <BaseSection title="Hackathons">
 			<RenderedText text={description} />
-            <div className="flex flex-col items-center md:flex-row gap-x-2">
-                <div className="w-[400px] scale-85 md:scale-100 md:sticky md:top-0 md:self-start">
+            <div className="flex flex-col items-center md:flex-row gap-x-5">
+                <div className="md:scale-115 md:sticky md:top-0 md:self-start">
                     <GlobeComponent
-                        width={400}
+                        width={315}
                         markers={hackathons.map((hackathon) => ({
                             location: hackathon.locationPoint as [number, number],
                         }))}

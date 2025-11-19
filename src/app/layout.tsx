@@ -44,7 +44,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${fontSans.variable} min-h-screen bg-background font-sans antialiased flex flex-col items-center mx-auto py-8 sm:py-16 px-5`}
+                className={`${fontSans.variable} min-h-screen bg-background font-sans antialiased flex flex-col items-center mx-auto py-8 sm:py-14 px-5`}
             >
                 <BackgroundGraphics />
 

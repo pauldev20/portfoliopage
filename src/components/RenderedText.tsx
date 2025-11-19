@@ -5,7 +5,7 @@ export function RenderedText({ text, className }: { text: string; className?: st
     return (
         <Markdown
             className={cn(
-                "prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert",
+                "prose max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert",
                 "text-xs sm:text-sm",
                 "space-y-2.5",
                 className,
