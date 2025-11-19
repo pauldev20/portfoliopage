@@ -1,4 +1,4 @@
-import { faGithub, faLinkedinIn, faXTwitter, faEthereum } from "@fortawesome/free-brands-svg-icons";
+import { faEthereum, faGithub, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
@@ -120,21 +120,21 @@ export const pageData = {
             title: "Slash Berlin",
             logo: "/hackathons/slashberlin.png",
             location: "Berlin, Germany",
-			category: "Sustainability",
+            category: "Sustainability",
             locationPoint: [52.510885, 13.3989367],
             livingLocationPoint: [49.1427, 9.2109],
             startDate: new Date("2022-09-23"),
             endDate: new Date("2022-09-25"),
             description:
                 "Built a mobile app similar to a Tamagotchi, which you can feed with the products you consume. Based on their impact on the environment, its healthy or not.",
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/tamabara"
-				}
-			]
-		},
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/tamabara",
+                },
+            ],
+        },
         {
             title: "ETHGlobal Lisbon",
             category: "Crypto/Blockchain",
@@ -144,18 +144,18 @@ export const pageData = {
             livingLocationPoint: [49.1427, 9.2109],
             startDate: new Date("2023-05-12"),
             endDate: new Date("2023-05-14"),
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/minimalens"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/minimalens-q4ivz"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/minimalens",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/minimalens-q4ivz",
+                },
+            ],
         },
         {
             title: "ETHMunich",
@@ -173,18 +173,18 @@ export const pageData = {
                     title: "🥇 Best real world use case - 1st place",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/block-board"
-				},
-				{
-					title: "Showcase",
-					icon: faGlobe,
-					link: "https://devfolio.co/projects/blockboard-0366"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/block-board",
+                },
+                {
+                    title: "Showcase",
+                    icon: faGlobe,
+                    link: "https://devfolio.co/projects/blockboard-0366",
+                },
+            ],
         },
         {
             title: "ETHGlobal New York",
@@ -204,18 +204,18 @@ export const pageData = {
                     title: "🏆 NEAR Protocol",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/pepetuals"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/pepetuals-kyyw9"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/pepetuals",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/pepetuals-kyyw9",
+                },
+            ],
         },
         {
             title: "ETHGlobal Istanbul",
@@ -242,18 +242,18 @@ export const pageData = {
                     title: "🥉 SAFE{CORE} ACCOUNT ABSTRACTION SDK",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/bridge-buddy"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/bridgebuddy-36te1"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/bridge-buddy",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/bridgebuddy-36te1",
+                },
+            ],
         },
         {
             title: "ETHGlobal London",
@@ -274,18 +274,18 @@ export const pageData = {
                     title: "🥇 Best World ID Usage",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/votelik-pollerin"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/votelik-pollerin-u0dcs"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/votelik-pollerin",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/votelik-pollerin-u0dcs",
+                },
+            ],
         },
         {
             title: "ETHGlobal Brussels",
@@ -306,18 +306,18 @@ export const pageData = {
                     title: "🏆 Honorable Mention",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/bananabets"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/bananabets-w0jbp"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/bananabets",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/bananabets-w0jbp",
+                },
+            ],
         },
         {
             title: "ETHGlobal Singapore",
@@ -341,18 +341,18 @@ export const pageData = {
                     title: "🥇 NounsDAO - Expand Public Goods",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/fillmeup"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/fill-me-up-9u13c"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/fillmeup",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/fill-me-up-9u13c",
+                },
+            ],
         },
         {
             title: "ETHGlobal San Francisco",
@@ -371,18 +371,18 @@ export const pageData = {
                     link: "https://ens.domains",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/beertalik-brokerin"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/beertalik-brokerin-57rkv"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/beertalik-brokerin",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/beertalik-brokerin-57rkv",
+                },
+            ],
         },
         {
             title: "ETHGlobal Bangkok",
@@ -401,18 +401,18 @@ export const pageData = {
                     link: "https://world.org",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/proofoftruth"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/proofoftruth-g31wn"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/proofoftruth",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/proofoftruth-g31wn",
+                },
+            ],
         },
         {
             title: "ETHGlobal Trifecta",
@@ -433,18 +433,18 @@ export const pageData = {
                     title: "🏆 Best use of Marlin TEEs",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/pass-tee-port"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/pass-tee-port-2qoc1"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/pass-tee-port",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/pass-tee-port-2qoc1",
+                },
+            ],
         },
         {
             title: "ETHGlobal Taipei",
@@ -457,18 +457,18 @@ export const pageData = {
                 "Built a service enabling organizations to reimburse real-world expenses for employees, students, and hackers",
             startDate: new Date("2025-04-04"),
             endDate: new Date("2025-04-06"),
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/touchgrass"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/touch-grass-q4033"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/touchgrass",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/touch-grass-q4033",
+                },
+            ],
         },
         {
             title: "ETHGlobal Cannes",
@@ -487,18 +487,18 @@ export const pageData = {
                     title: "🥇 ETHGlobal Finalist",
                 },
             ],
-			links: [
-				{
-					title: "GitHub",
-					icon: faGithub,
-					link: "https://github.com/pauldev20/onlydanks"
-				},
-				{
-					title: "ETHGlobal",
-					icon: faEthereum,
-					link: "https://ethglobal.com/showcase/onlydanks-wi77b"
-				}
-			]
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/onlydanks",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/onlydanks-wi77b",
+                },
+            ],
         },
     ],
     projectsDescription: "Some mentionable projects of mine",

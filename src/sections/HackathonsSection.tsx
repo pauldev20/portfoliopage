@@ -1,9 +1,8 @@
 import BaseSection from "@/components/BaseSection";
 import GlobeComponent from "@/components/Globe";
 import { HackathonCard } from "@/components/HackathonCard";
-import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { RenderedText } from "@/components/RenderedText";
-
+import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
 interface HackathonProps {
     title: string;
@@ -16,10 +15,10 @@ interface HackathonProps {
     endDate: Date;
     category?: string;
     links?: readonly {
-		title: string;
-		link: string;
-		icon: IconDefinition;
-	}[];
+        title: string;
+        link: string;
+        icon: IconDefinition;
+    }[];
     prizes?: readonly {
         title: string;
     }[];
@@ -33,7 +32,7 @@ interface HackathonsSectionProps {
 export default function HackathonsSection({ hackathons, description }: HackathonsSectionProps) {
     return (
         <BaseSection title="Hackathons">
-			<RenderedText text={description} />
+            <RenderedText text={description} />
             <div className="flex flex-col items-center md:flex-row gap-x-5">
                 <div className="md:scale-115 md:sticky md:top-0 md:self-start">
                     <GlobeComponent
