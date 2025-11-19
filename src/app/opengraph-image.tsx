@@ -49,10 +49,10 @@ export default async function Image() {
                         {pageData.links.map((link) => (
                             <span
                                 key={link.label}
-                                tw="border-slate-200 p-2 px-3 rounded-xl font-bold text-slate-900 bg-slate-200 flex items-center justify-center"
+                                tw="border-slate-200 px-2.5 py-1 rounded-md font-bold text-slate-900 flex items-center justify-center bg-black text-white shadow-sm"
                                 style={{ gap: "6px" }}
                             >
-                                <FAIcon icon={link.icon} /> {link.username}
+                                <FAIcon icon={link.icon} color="#fff" /> {link.username}
                             </span>
                         ))}
                     </div>
