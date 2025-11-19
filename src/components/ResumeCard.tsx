@@ -34,34 +34,35 @@ export const ResumeCard = ({
 			<RoundImage
 				image={logoUrl}
 				alt={altText}
+				className="self-center"
 			/>
-			<div className="flex flex-col min-w-0">
-				<div className="flex items-start justify-between gap-x-1">
-					<div className="flex-1 min-w-0">
-						<TitleComponent
-							href={href ?? "#"}
-							target="_blank"
-							rel="noopener noreferrer"
-							className={cn(
-								"inline-flex items-center flex-wrap gap-x-1 font-semibold leading-none text-xs sm:text-sm",
-								href ? "hover:underline" : "",
-							)}
-						>
-							{title}
-							{badges?.map((badge) => (
-								<Badge variant="secondary" className="align-middle text-xs" key={badge}>
-									{badge}
-								</Badge>
-							))}
-						</TitleComponent>
-						{subtitle && <div className="font-sans text-xs">{subtitle}</div>}
-					</div>
-					<div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right whitespace-nowrap leading-tight">
-						{period}
-					</div>
+
+			<div className="flex items-center justify-between gap-x-1">
+				<div className="flex flex-col items-start">
+					<TitleComponent
+						href={href ?? "#"}
+						target="_blank"
+						rel="noopener noreferrer"
+						className={cn(
+							"inline-flex items-center flex-wrap gap-x-1 font-semibold text-xs sm:text-sm",
+							href ? "hover:underline" : "",
+						)}
+					>
+						{title}
+						{badges?.map((badge) => (
+							<Badge variant="secondary" className="align-middle text-xs" key={badge}>
+								{badge}
+							</Badge>
+						))}
+					</TitleComponent>
+					{subtitle && <div className="font-sans text-xs">{subtitle}</div>}
 				</div>
-				{description && <RenderedText text={description} className="mt-1.5" />}
+				<div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right whitespace-nowrap leading-tight">
+					{period}
+				</div>
 			</div>
+
+			{description && <RenderedText text={description} className="mt-1.5 col-start-2" />}
 		</li>
     );
 };

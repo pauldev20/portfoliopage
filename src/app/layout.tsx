@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
 
 import "./globals.css";
@@ -27,6 +27,12 @@ export const metadata: Metadata = {
     ),
 };
 
+export const viewport: Viewport = {
+	width: "device-width",
+	initialScale: 1,
+	viewportFit: "cover",
+};
+
 /* -------------------------------------------------------------------------- */
 /*                                   Layout                                   */
 /* -------------------------------------------------------------------------- */
@@ -40,6 +46,8 @@ export default function RootLayout({
             <body
                 className={`${fontSans.variable} min-h-screen bg-background font-sans antialiased flex flex-col items-center mx-auto py-8 sm:py-16 px-5`}
             >
+                <BackgroundGraphics />
+
                 {children}
 
                 <footer className="py-5 sm:py-0 sm:pt-10 text-center text-sm text-muted-foreground mt-5">
@@ -51,8 +59,6 @@ export default function RootLayout({
 
                 <SpeedInsights />
                 <Analytics />
-
-                <BackgroundGraphics />
             </body>
         </html>
     );
