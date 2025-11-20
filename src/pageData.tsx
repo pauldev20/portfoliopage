@@ -77,7 +77,7 @@ export const pageData = {
             startDate: new Date("2022-03-01"),
             endDate: new Date("2024-12-01"),
             description:
-                "Completed a 2-year intensive software engineering program at 42 Heilbronn, focusing on practical, project-based learning in a collaborative environment. Gained hands-on experience in C and C++ and especially colaborative programming and teamwork.",
+                "Completed a 2-year intensive software engineering program at 42 Heilbronn, focusing on practical, project-based learning in a collaborative environment. Gained hands-on experience in C and C++, with a strong emphasis on collaborative programming and teamwork.",
         },
         {
             title: "Kolping Gymnasium Fellbach",
@@ -126,7 +126,7 @@ export const pageData = {
             startDate: new Date("2022-09-23"),
             endDate: new Date("2022-09-25"),
             description:
-                "Built a mobile app similar to a Tamagotchi, which you can feed with the products you consume. Based on their impact on the environment, its healthy or not.",
+                "Built a mobile app similar to a Tamagotchi, which you can feed with the products you consume. Based on their impact on the environment, it becomes healthy or unhealthy.",
             links: [
                 {
                     title: "GitHub",
@@ -165,7 +165,7 @@ export const pageData = {
             locationPoint: [48.1371079, 11.5753822],
             livingLocationPoint: [49.1427, 9.2109],
             description:
-                "Developed a platform connecting individuals selling advertising space to businesses looking to advertise ",
+                "Developed a platform connecting individuals selling advertising space to businesses looking to advertise.",
             startDate: new Date("2023-08-11"),
             endDate: new Date("2023-08-13"),
             prizes: [
@@ -225,7 +225,7 @@ export const pageData = {
             locationPoint: [41.006381, 28.9758715],
             livingLocationPoint: [49.1427, 9.2109],
             description:
-                "Developed a fully functioning browser-based wallet that completely abstracts the different chains, so its easy to use for the user.",
+                "Developed a fully functioning browser-based wallet that completely abstracts the different chains, making it easy for the user to use.",
             startDate: new Date("2023-11-17"),
             endDate: new Date("2023-11-19"),
             prizes: [
@@ -422,7 +422,7 @@ export const pageData = {
             locationPoint: [49.1427, 9.2109],
             livingLocationPoint: [49.1427, 9.2109],
             description:
-                "Developed a system that securly creates a verified assosiaction between passport data and a wallet, this is done by reading the passport datha through NFC (ICAO Doc 9303) and validating it inside a TEE, which then submits it onchain.",
+                "Developed a system that securely creates a verified association between passport data and a wallet. This is done by reading the passport data through NFC (ICAO Doc 9303) and validating it inside a TEE, which then submits it on-chain.",
             startDate: new Date("2025-03-20"),
             endDate: new Date("2025-03-26"),
             prizes: [
