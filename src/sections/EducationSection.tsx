@@ -7,7 +7,7 @@ interface Education {
     subtitle: string;
     description?: string;
     startDate: Date;
-    endDate: Date;
+    endDate?: Date;
     link?: string;
 }
 
@@ -29,7 +29,8 @@ export default function EducationSection({ education }: EducationSectionProps) {
                             title={education.title}
                             href={education.link}
                             subtitle={education.subtitle}
-                            period={`${education.startDate.toLocaleString("en-US", { month: "long", year: "numeric" })} - ${education.endDate ? education.endDate.toLocaleString("en-US", { month: "long", year: "numeric" }) : "present"}`}
+							startDate={education.startDate}
+							endDate={education.endDate}
                             description={education.description}
                         />
                     ))}

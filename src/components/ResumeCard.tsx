@@ -1,5 +1,3 @@
-"use client";
-
 import { RenderedText } from "@/components/RenderedText";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -13,7 +11,8 @@ interface ResumeCardProps {
     subtitle?: string;
     href?: string;
     badges?: readonly string[];
-    period: string;
+	startDate: Date;
+	endDate?: Date;
     description?: string;
 }
 
@@ -24,7 +23,8 @@ export const ResumeCard = ({
     subtitle,
     href,
     badges,
-    period,
+    startDate,
+    endDate,
     description,
 }: ResumeCardProps) => {
     const TitleComponent = href ? Link : "h3";
@@ -54,7 +54,10 @@ export const ResumeCard = ({
                     {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
                 </div>
                 <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right whitespace-nowrap leading-tight">
-                    {period}
+					<time dateTime={startDate.toISOString()}>{startDate.toLocaleString("en-US", { month: "long", year: "numeric" })}</time>
+					{" - "}
+					{endDate && <time dateTime={endDate.toISOString()}>{endDate.toLocaleString("en-US", { month: "long", year: "numeric" })}</time>}
+					{!endDate && <strong>present</strong>}
                 </div>
             </div>
 
