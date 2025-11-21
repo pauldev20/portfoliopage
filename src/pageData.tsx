@@ -101,6 +101,7 @@ export const pageData = {
         "TypeScript",
         "React",
         "Next.js",
+		"Tailwind CSS",
         "C",
         "C++",
         "Python",
