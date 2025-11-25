@@ -101,15 +101,15 @@ export const pageData = {
         "TypeScript",
         "React",
         "Next.js",
-		"Tailwind CSS",
+        "Tailwind CSS",
         "C",
         "C++",
         "Python",
         "Flutter",
         "Dart",
         "Docker",
-		"SQL",
-		"MongoDB",
+        "SQL",
+        "MongoDB",
         "Blockchain",
         "Electrical Engineering",
         "Embedded Systems",
@@ -117,7 +117,7 @@ export const pageData = {
         "Documentation Writing",
     ],
     hackathonsDescription:
-        "Love to attend hackathons and build things with other people. Finished as a **finalist/1st place 5 times**. Which resulted in over 48k$ in prizes.",
+        "Love to attend hackathons and build things with other people. Finished as a **finalist/1st place 6 times**. Which resulted in over 48k$ in prizes.",
     hackathons: [
         {
             title: "Slash Berlin",
@@ -500,6 +500,30 @@ export const pageData = {
                     title: "ETHGlobal",
                     icon: faEthereum,
                     link: "https://ethglobal.com/showcase/onlydanks-wi77b",
+                },
+            ],
+        },
+        {
+            title: "ETHGlobal Bueenos Aires",
+            category: "Crypto/Blockchain",
+            logo: "/hackathons/ethbuenosaires.png",
+            location: "Buenos Aires, Argentina",
+            locationPoint: [-34.6036844, -58.3815591],
+            livingLocationPoint: [49.1427, 9.2109],
+            startDate: new Date("2025-11-21"),
+            endDate: new Date("2025-11-23"),
+            description:
+                "Built a improved search engine for ETHGlobal hackathon projects, which allows you to efficiently search for projects by advanced filters.",
+            links: [
+                {
+                    title: "GitHub",
+                    icon: faGithub,
+                    link: "https://github.com/pauldev20/ethglobalsearch",
+                },
+                {
+                    title: "ETHGlobal",
+                    icon: faEthereum,
+                    link: "https://ethglobal.com/showcase/ethsearch-m9sh8",
                 },
             ],
         },
