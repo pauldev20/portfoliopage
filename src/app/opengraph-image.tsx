@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 export const runtime = "nodejs";
 
 // biome-ignore lint/style/useNodejsImportProtocol: path
