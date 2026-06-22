@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
+import Link from "next/link";
 
 import "./globals.css";
 
@@ -50,12 +51,17 @@ export default function RootLayout({
 
                 {children}
 
-                <footer className="py-5 sm:py-0 sm:pt-10 text-center text-sm text-muted-foreground mt-5">
-                    Made with ❤️ by <strong>pauldev</strong>
+                <footer className="py-5 sm:py-0 sm:pt-10 text-center text-sm text-muted-foreground mt-5 flex flex-col items-center gap-1">
+                    <div>
+                        Made with ❤️ by <strong>pauldev</strong>
+                    </div>
+                    <Link href="/imprint" className="hover:text-foreground underline">
+                        Imprint
+                    </Link>
                 </footer>
 
                 {/* ------------------------------- Bottom Blur ------------------------------ */}
-                <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background" />
+                <div className="pointer-events-none fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background" />
 
                 <SpeedInsights />
                 <Analytics />
